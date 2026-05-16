@@ -1,4 +1,5 @@
 EfficientZero V2 - Simplified Reproduction (CartPole-v1)
+
 A lightweight educational implementation of **EfficientZero V2** (ICML 2024) focused on the core algorithmic ideas: **world model learning**, **Sampling-Based Gumbel Search**, **Sequential Halving**, and **Search-Based Value Estimation (SVE)** with mixed value targets.
 
 
