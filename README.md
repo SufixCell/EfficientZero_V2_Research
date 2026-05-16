@@ -105,7 +105,7 @@ Key Differences from Original Paper
 | Scale                 | Millions of steps, multi-GPU    | 50k steps, single machine      |
 
 
-##Implementation Highlights
+Implementation Highlights
 
 - **Gumbel Search**: Uses Gumbel-Top-k + Sequential Halving for efficient action selection
 - **Mixed Value Target**: TD for early/fresh data, Search-Based Value Estimation for stale data
