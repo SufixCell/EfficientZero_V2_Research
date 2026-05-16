@@ -1,12 +1,4 @@
 EfficientZero V2 - Simplified Reproduction (CartPole-v1)
-
-**Course Project**: CT-469 Reinforcement Learning  
-**Instructor**: Dr. Murk Marvi  
-**University**: NED University of Engineering and Technology  
-**Group Members**:  
-- Abdur Rehman (AI-22014)  
-- Sufiyan Nadeem (AI-22047)
-
 A lightweight educational implementation of **EfficientZero V2** (ICML 2024) focused on the core algorithmic ideas: **world model learning**, **Sampling-Based Gumbel Search**, **Sequential Halving**, and **Search-Based Value Estimation (SVE)** with mixed value targets.
 
 
