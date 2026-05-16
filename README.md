@@ -1,9 +1,9 @@
-EfficientZero V2 - Simplified Reproduction (CartPole-v1)
+##EfficientZero V2 - Simplified Reproduction (CartPole-v1)
 
 A lightweight educational implementation of **EfficientZero V2** (ICML 2024) focused on the core algorithmic ideas: **world model learning**, **Sampling-Based Gumbel Search**, **Sequential Halving**, and **Search-Based Value Estimation (SVE)** with mixed value targets.
 
 
-Overview
+##Overview
 
 This repository contains our reproduction of EfficientZero V2 for the **Gymnasium CartPole-v1** environment. While the original paper demonstrates state-of-the-art performance across 66 diverse tasks (Atari, DMControl proprioceptive & vision), our version is intentionally simplified for clarity, education, and single-machine execution.
 
@@ -15,7 +15,7 @@ This repository contains our reproduction of EfficientZero V2 for the **Gymnasiu
 - Policy improvement via search
 
 
-Features
+##Features
 
 - **Train.py**: Full training pipeline with world model, Gumbel search, and mixed targets
 - **Test.py**: Evaluation script with live rendering, random agent baseline, and comparison charts
@@ -25,7 +25,7 @@ Features
 
 
 
-Results
+##Results
 
 Our simplified agent successfully learns to balance the pole:
 
@@ -38,7 +38,7 @@ Our simplified agent successfully learns to balance the pole:
 
 
 
-## 🛠️ Installation
+##Installation
 
 ```bash
 # 1. Clone the repo
@@ -56,7 +56,7 @@ pip install gymnasium matplotlib numpy
 
 
 
-Usage
+##Usage
 
 Training
 
@@ -81,7 +81,7 @@ python test.py --episodes 20 --no-render
 ```
 
 
-Project Structure
+##Project Structure
 
 ```
 ├── train.py                    
@@ -94,7 +94,7 @@ Project Structure
 ```
 
 
-Key Differences from Original Paper
+##Key Differences from Original Paper
 
 | Aspect                | Original EZ-V2                  | Our Implementation              |
 |-----------------------|---------------------------------|---------------------------------|
@@ -105,7 +105,7 @@ Key Differences from Original Paper
 | Scale                 | Millions of steps, multi-GPU    | 50k steps, single machine      |
 
 
-Implementation Highlights
+##Implementation Highlights
 
 - **Gumbel Search**: Uses Gumbel-Top-k + Sequential Halving for efficient action selection
 - **Mixed Value Target**: TD for early/fresh data, Search-Based Value Estimation for stale data
